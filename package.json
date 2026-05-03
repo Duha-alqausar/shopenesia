@@ -7,9 +7,18 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "node --test",
-    "seed": "node src/seed.js"
+    "seed": "node src/seed.js",
+    "pdf:sample": "node scripts/generate-sample-pdf.js",
+    "pdf:html": "node scripts/html-to-pdf.js"
   },
-  "keywords": ["marketplace", "ecommerce", "fullstack"],
+  "keywords": [
+    "marketplace",
+    "ecommerce",
+    "fullstack"
+  ],
   "author": "Duha + Hermes",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^24.42.0"
+  }
 }
