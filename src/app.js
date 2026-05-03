@@ -11,16 +11,16 @@ const PUBLIC_DIR = path.join(ROOT, 'public');
 const DEFAULT_DATA_FILE = path.join(ROOT, 'data', 'db.json');
 
 export const seedProducts = [
-  { id: 'p-001', name: 'ShopeNesia Smartwatch S1', category: 'Elektronik', price: 249000, rating: 4.8, sold: 1240, stock: 50, image: '⌚', badge: 'Flash Sale' },
-  { id: 'p-002', name: 'Headphone Wireless Bass Pro', category: 'Elektronik', price: 189000, rating: 4.7, sold: 2180, stock: 42, image: '🎧', badge: 'Terlaris' },
-  { id: 'p-003', name: 'Tas Ransel Urban Daily', category: 'Fashion', price: 129000, rating: 4.6, sold: 980, stock: 35, image: '🎒', badge: 'Gratis Ongkir' },
-  { id: 'p-004', name: 'Sepatu Sneakers CloudStep', category: 'Fashion', price: 299000, rating: 4.9, sold: 1540, stock: 22, image: '👟', badge: 'Promo' },
-  { id: 'p-005', name: 'Rice Cooker Mini 1.2L', category: 'Rumah Tangga', price: 215000, rating: 4.8, sold: 760, stock: 18, image: '🍚', badge: 'Hemat' },
-  { id: 'p-006', name: 'Skincare Bright Set', category: 'Kecantikan', price: 159000, rating: 4.7, sold: 3020, stock: 67, image: '🧴', badge: 'Best Seller' },
-  { id: 'p-007', name: 'Botol Minum Stainless 750ml', category: 'Olahraga', price: 79000, rating: 4.5, sold: 640, stock: 100, image: '🥤', badge: 'Murah' },
-  { id: 'p-008', name: 'Keyboard Mechanical Compact', category: 'Komputer', price: 399000, rating: 4.9, sold: 540, stock: 12, image: '⌨️', badge: 'Limited' },
-  { id: 'p-009', name: 'Lampu Meja LED Flexible', category: 'Rumah Tangga', price: 99000, rating: 4.6, sold: 860, stock: 44, image: '💡', badge: 'Diskon' },
-  { id: 'p-010', name: 'Powerbank 20.000mAh Fast Charge', category: 'Elektronik', price: 229000, rating: 4.8, sold: 1790, stock: 33, image: '🔋', badge: 'Hot' }
+  { id: 'p-001', name: 'ShopeNesia Smartwatch S1', category: 'Elektronik', price: 249000, rating: 4.8, sold: 1240, stock: 50, image: 'assets/smartwatch.svg', badge: 'Flash Sale' },
+  { id: 'p-002', name: 'Headphone Wireless Bass Pro', category: 'Elektronik', price: 189000, rating: 4.7, sold: 2180, stock: 42, image: 'assets/headphones.svg', badge: 'Terlaris' },
+  { id: 'p-003', name: 'Tas Ransel Urban Daily', category: 'Fashion', price: 129000, rating: 4.6, sold: 980, stock: 35, image: 'assets/backpack.svg', badge: 'Gratis Ongkir' },
+  { id: 'p-004', name: 'Sepatu Sneakers CloudStep', category: 'Fashion', price: 299000, rating: 4.9, sold: 1540, stock: 22, image: 'assets/sneakers.svg', badge: 'Promo' },
+  { id: 'p-005', name: 'Rice Cooker Mini 1.2L', category: 'Rumah Tangga', price: 215000, rating: 4.8, sold: 760, stock: 18, image: 'assets/rice-cooker.svg', badge: 'Hemat' },
+  { id: 'p-006', name: 'Skincare Bright Set', category: 'Kecantikan', price: 159000, rating: 4.7, sold: 3020, stock: 67, image: 'assets/skincare.svg', badge: 'Best Seller' },
+  { id: 'p-007', name: 'Botol Minum Stainless 750ml', category: 'Olahraga', price: 79000, rating: 4.5, sold: 640, stock: 100, image: 'assets/bottle.svg', badge: 'Murah' },
+  { id: 'p-008', name: 'Keyboard Mechanical Compact', category: 'Komputer', price: 399000, rating: 4.9, sold: 540, stock: 12, image: 'assets/keyboard.svg', badge: 'Limited' },
+  { id: 'p-009', name: 'Lampu Meja LED Flexible', category: 'Rumah Tangga', price: 99000, rating: 4.6, sold: 860, stock: 44, image: 'assets/lamp.svg', badge: 'Diskon' },
+  { id: 'p-010', name: 'Powerbank 20.000mAh Fast Charge', category: 'Elektronik', price: 229000, rating: 4.8, sold: 1790, stock: 33, image: 'assets/powerbank.svg', badge: 'Hot' }
 ];
 
 function initialState() {

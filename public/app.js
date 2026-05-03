@@ -16,7 +16,7 @@ function setAuthStatus(text) { document.getElementById('authStatus').textContent
 function renderProducts(list) {
   document.getElementById('products').innerHTML = list.map(p => `
     <article class="product-card">
-      <div class="product-emoji">${p.image}</div>
+      <div class="product-emoji"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
       <div class="product-body">
         <span class="badge">${p.badge}</span>
         <h3>${p.name}</h3>
@@ -53,7 +53,7 @@ async function loadCart(open = false) {
   const { cart } = await api('/api/cart');
   document.getElementById('cartCount').textContent = cart.summary.itemCount;
   document.getElementById('cartItems').innerHTML = cart.items.length ? cart.items.map(i => `
-    <div class="cart-item"><div>${i.image}</div><div><strong>${i.name}</strong><br><small>${i.qty} × ${rupiah(i.price)}</small></div><button class="secondary" onclick="removeItem('${i.id}')">Hapus</button></div>
+    <div class="cart-item"><div><img class="cart-thumb" src="${i.image}" alt="${i.name}"></div><div><strong>${i.name}</strong><br><small>${i.qty} × ${rupiah(i.price)}</small></div><button class="secondary" onclick="removeItem('${i.id}')">Hapus</button></div>
   `).join('') : '<p class="muted">Keranjang masih kosong.</p>';
   document.getElementById('cartSummary').innerHTML = `
     <div><span>Item</span><strong>${cart.summary.itemCount}</strong></div>
