@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopeNesia - Marketplace Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="bag">🛍️</span> ShopeNesia</div>
+    <form id="searchForm" class="search"><input id="searchInput" placeholder="Cari produk, kategori, promo..." /><button>Cari</button></form>
+    <button id="cartButton" class="cart-btn">Keranjang <span id="cartCount">0</span></button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Marketplace lokal • GitHub Pages preview</p>
+      <h1>Belanja cepat, promo meriah, checkout mudah.</h1>
+      <p>Preview statis dari ShopeNesia. Repo GitHub tetap berisi backend fullstack Node.js untuk auth, cart, dan checkout.</p>
+      <button onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">Mulai Belanja</button>
+    </div>
+    <div class="voucher-card">
+      <span>🔥 Flash Sale Mingguan</span>
+      <strong>Diskon sampai 70%</strong>
+      <small>Gratis ongkir min. Rp250.000</small>
+    </div>
+  </section>
+
+  <main>
+    <section class="panel auth-panel">
+      <h2>Masuk / Daftar</h2>
+      <div class="auth-grid">
+        <input id="name" placeholder="Nama" value="Duha" />
+        <input id="email" placeholder="Email" value="duha@example.com" />
+        <input id="password" placeholder="Password" type="password" value="secret123" />
+        <button id="registerBtn">Daftar Demo</button>
+        <button id="loginBtn" class="secondary">Login Demo</button>
+      </div>
+      <p id="authStatus" class="muted">Mode preview statis: data disimpan di browser.</p>
+    </section>
+
+    <section class="section-title">
+      <div><p class="eyebrow">Kategori populer</p><h2>Temukan kebutuhanmu</h2></div>
+      <div id="categories" class="chips"></div>
+    </section>
+
+    <section id="products" class="product-grid"></section>
+  </main>
+
+  <aside id="drawer" class="drawer">
+    <div class="drawer-head"><h2>Keranjang</h2><button id="closeCart">×</button></div>
+    <div id="cartItems"></div>
+    <div id="cartSummary" class="summary"></div>
+    <input id="address" placeholder="Alamat pengiriman" value="Jakarta, Indonesia" />
+    <select id="payment"><option>COD</option><option>Transfer Bank</option><option>E-Wallet</option></select>
+    <button id="checkoutBtn" class="checkout">Checkout Demo</button>
+    <p id="checkoutStatus" class="muted"></p>
+  </aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>

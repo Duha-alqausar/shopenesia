@@ -1,0 +1,15 @@
+{
+  "name": "shopenesia",
+  "version": "1.0.0",
+  "description": "ShopeNesia fullstack marketplace demo with auth, products, cart, and checkout.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "seed": "node src/seed.js"
+  },
+  "keywords": ["marketplace", "ecommerce", "fullstack"],
+  "author": "Duha + Hermes",
+  "license": "MIT"
+}
